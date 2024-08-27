@@ -52,6 +52,6 @@ describe('generatePassword', () => {
     const length = 50;
     const password = generatePassword(length, 'high');
     const uniqueChars = new Set(password.split(''));
-    expect(uniqueChars.size).toBeGreaterThan(1); // Ensure there's more than one unique character
+    expect(uniqueChars.size).toBeGreaterThan(1);
   });
 });
